@@ -55,7 +55,7 @@ const deleteTask = (deletedTaskId) => {
                
               // DELETE ALL TASKS
   const deleteAllTask = () => {
-    alert("are you sure!")
+    confirm("are you sure!")
     setTasks([])
   }
 
