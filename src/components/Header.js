@@ -2,13 +2,14 @@
 import Button from "./Button"
 
 const Header=({title,showAddTask,toggleShow})=> {
+  
 
   // const handleClick = () => {
   //   console.log("Click with handleClicK from header")}
   return (
     <div className="header">
       <header >
-        <h1>{title}</h1>
+        <h1 >{title}</h1>
       </header>
       <Button
       color={showAddTask ? "red" :"purple"} 
@@ -28,3 +29,6 @@ const Header=({title,showAddTask,toggleShow})=> {
 // }
 
 export default Header
+
+
+

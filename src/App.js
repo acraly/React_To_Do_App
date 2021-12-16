@@ -45,6 +45,7 @@ const deleteTask = (deletedTaskId) => {
 
               //TOGGLE DONE
  const toggleDone = (toggleDoneId)=>{
+  
    setTasks(
      tasks.map((task)=>task.id===toggleDoneId ? {...task,isDone: !task.isDone} : task)
    )
@@ -55,7 +56,7 @@ const deleteTask = (deletedTaskId) => {
                
               // DELETE ALL TASKS
   const deleteAllTask = () => {
-    confirm("are you sure!")
+    alert("are you sure!")
     setTasks([])
   }
 
@@ -68,9 +69,10 @@ const deleteTask = (deletedTaskId) => {
       showAddTask={showAddTask}
       toggleShow = {toggleShow}
       />
-      {showAddTask && <AddTask addTask={addTask}  />}
+     
+     {showAddTask &&<AddTask addTask={addTask}/> }
       
-      {tasks.length > 0 ? ( <Tasks tasks = {tasks} deleteTask={deleteTask} toggleDone={toggleDone} deleteAllTask={deleteAllTask}/>) : (<p style={{textAlign:"center" ,color:"white" ,fontWeight:"bold"}}>No Task To Show</p>)}
+     {tasks.length > 0 ? ( <Tasks tasks = {tasks} deleteTask={deleteTask} toggleDone={toggleDone} deleteAllTask={deleteAllTask}/>) : (<p style={{textAlign:"center" ,color:"white" ,fontWeight:"bold"}}>No Task To Show</p>)}
      
       
     </div>

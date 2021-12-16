@@ -1,7 +1,7 @@
 // import React from 'react'
 import Task from "./Task";
 
-function Tasks({tasks,deleteTask,toggleDone,deleteAllTask,areYouSure}) {
+function Tasks({tasks,deleteTask,toggleDone,deleteAllTask}) {
   console.log("tasks:",tasks);
   
   return (

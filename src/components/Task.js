@@ -11,12 +11,6 @@ function Task({task,deleteTask,toggleDone}) {
         <FaTimesCircle style={{color:"rgb(109, 14, 138)"}} onClick={()=>deleteTask(task.id)}/>
         </h3>
       <p>{task.day}</p>
-      
-      {/* <h3>
-        {task.text}
-        <FaTimes style={{color:"red"}} onClick={()=> deleteTask(task.id)}/>
-      </h3>
-      <p>{task.date}</p> */}
     </div>
   )
 }
